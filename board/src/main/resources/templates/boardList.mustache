@@ -1,0 +1,67 @@
+{{>base/baseHeader}}
+<script>
+
+    $(document).ready(function () {
+        showBoard();
+    })
+
+    function timeSplit(time) {
+        return time.split('T')[0];
+    }
+
+    function clickBoard(board) {
+        let url = `/boards/detail/${board}`;
+        console.log(url);
+        window.location.href = url;
+    }
+
+    function addBoard(board, count) {
+        let getBoardId = JSON.stringify(board.id);
+        return `<tr onclick="clickBoard(${getBoardId})">
+                    <th scope="row">${++count}</th>
+                    <td>${board.title}</td>
+                    <td>${board.author}</td>
+                    <td>${timeSplit(board.modifiedAt)}</td>
+                    <input type="hidden" " value="${board.id}" >
+                </tr>`;
+    }
+
+    function showBoard() {
+        $.ajax({
+            type: 'GET',
+            url: '/api/boards',
+            success: function (response) {
+                console.log(response[1]);
+                for (let i = 0; i < response.length; i++) {
+                    let board = response[i];
+                    let tempHtml = addBoard(board, i);
+                    $('#boarList').append(tempHtml);
+                }
+            }
+        })
+    }
+
+
+</script>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 mb-3 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <a href="/boards/create"><input type="button" class="btn btn-primary"
+                                            style="float:right; padding: 5px 10px;" value="글쓰기"></a>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">날짜</th>
+                </tr>
+                </thead>
+                <tbody class="table" id="boarList">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{{>base/baseFooter}}

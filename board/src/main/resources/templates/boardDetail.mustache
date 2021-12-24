@@ -1,0 +1,58 @@
+{{>base/baseHeader}}
+<script>
+    $(document).ready(function () {
+        let url = window.location.href;
+        let boardId = url.substring(url.lastIndexOf('/') + 1)
+        console.log(boardId);
+        detailBoard(boardId);
+    })
+
+    function timeSplit(time) {
+        return time.split('T')[0];
+    }
+
+    function addHtml(response) {
+        return `<div class="row" style="line-height: 55px;">
+<!--style="float: left; font-weight: bold; font-size: 40px;"-->
+                    <div class="col-9 h1" >${response.title}</div>
+                    <div class="col-3" >${timeSplit(response.modifiedAt)}</div>
+<!--style="float: right"-->
+                </div>
+                <p>${response.content}</p>`;
+    }
+
+    function detailBoard(id){
+        $.ajax({
+            type: 'GET',
+            url: `/api/boards/detail/${id}`,
+            success: function (response) {
+                let tempHtml = addHtml(response);
+                $('#boardDetail').append(tempHtml);
+
+            }
+        })
+    }
+
+    function updateBoard() {
+        let url = window.location.href;
+        let boardId = url.substring(url.lastIndexOf('/') + 1)
+        let updateUrl = `/boards/update/${boardId}`;
+        window.location.href = updateUrl;
+    }
+</script>
+<!-- Post Content-->
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="row" id="boardDetail"></div>
+                <div style="float:right">
+                    <a type="button" class="btn btn-primary m-2" href="/boards">취소</a>
+                    <a type="button" class="btn btn-primary m-2" onclick="updateBoard()">수정</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+{{>base/baseFooter}}

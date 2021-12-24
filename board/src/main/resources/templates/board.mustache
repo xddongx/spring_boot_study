@@ -1,0 +1,28 @@
+{{>base/header}}
+<script>
+    function addBoard(board) {
+        return `<h2>${board.title}</h2>
+                <h5>${board.author}</h5>
+                <p>${board.content}</p>`;
+    }
+
+    $(document).ready(function () {
+        $.ajax({
+            type: 'GET',
+            url: '/api/boards',
+            success: function (response) {
+                console.log(response);
+                for (let i = 0; i < response.length; i++) {
+                    let board = response[i];
+                    let item = addBoard(board);
+                    $('#test').append(item);
+                }
+            }
+        })
+    })
+
+</script>
+
+<div id="test"></div>
+
+{{>base/footer}}
