@@ -2,6 +2,7 @@ package com.ddong.board.util;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.EntityListeners;
@@ -16,6 +17,6 @@ public abstract class Timestamped {
     @CreatedDate                // 최초 생성 시간
     private LocalDateTime createdAt;
 
-    @CreatedDate                // 마지막 변경 시간
+    @LastModifiedDate                // 마지막 변경 시간
     private LocalDateTime modifiedAt;
 }

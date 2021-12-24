@@ -1,4 +1,4 @@
-package com.ddong.board.requestDto;
+package com.ddong.board.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

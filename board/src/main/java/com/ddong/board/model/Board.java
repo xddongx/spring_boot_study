@@ -1,6 +1,7 @@
 package com.ddong.board.model;
 
-import com.ddong.board.requestDto.BoardRequestDto;
+import com.ddong.board.dto.BoardRequestDto;
+import com.ddong.board.util.BoardValidator;
 import com.ddong.board.util.Timestamped;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,7 +32,11 @@ public class Board extends Timestamped {
             throw new IllegalArgumentException("해당 내용이 유효하지 않습니다.");
         }
 
+        this.title = requestDto.getTitle();
+        this.content = requestDto.getContent();
+    }
 
+    public void updateBoard(BoardRequestDto requestDto) {
         this.title = requestDto.getTitle();
         this.content = requestDto.getContent();
     }

@@ -1,7 +1,6 @@
 package com.ddong.board.model;
 
-import com.ddong.board.repository.BoardRepository;
-import com.ddong.board.requestDto.BoardRequestDto;
+import com.ddong.board.dto.BoardRequestDto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
