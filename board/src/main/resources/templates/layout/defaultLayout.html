@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <th:block th:replace="fragments/commonHead"></th:block>
+    <script th:src="@{/js/board.js}"></script>
+</head>
+
+<header th:replace="~{fragments/header :: header}"/>
+
+<body>
+<!-- navigation -->
+<nav th:replace="~{fragments/navigation :: navigation}"/>
+
+<!-- 각 화면 컨텐츠 -->
+<th:block layout:fragment="content"/>
+
+<!-- footer -->
+<footer th:replace="fragments/footer :: footer"/>
+
+<!-- 각 화면 js -->
+<!--<th:block layout:fragment="custom_js"></th:block>-->
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core theme JS-->
+<script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>

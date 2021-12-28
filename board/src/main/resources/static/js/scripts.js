@@ -3,6 +3,8 @@
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
 */
+let targetId;
+
 window.addEventListener('DOMContentLoaded', () => {
     let scrollPos = 0;
     const mainNav = document.getElementById('mainNav');
@@ -14,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
                 mainNav.classList.add('is-visible');
             } else {
-                console.log(123);
+                // console.log(123);
                 mainNav.classList.remove('is-visible', 'is-fixed');
             }
         } else {
@@ -26,4 +28,26 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         scrollPos = currentTop;
     });
+
+    $(document).ready(function() {
+
+        console.log("target ID :  " + targetId);
+
+        var url = window.location.href;
+        console.log(url);
+
+        if (url.indexOf("details") > -1) {
+            console.log("details");
+            targetId = url.split('/').pop();
+            getboarddetail(targetId)
+        } else if (url.indexOf("boards") > -1) {
+            console.log("boards");
+            getboardlist();
+        } else {
+            console.log("home");
+        }
+        
+    })
 })
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/defaultLayout}"
+      th:with="metaTitle='게시판'">
+<head>
+
+</head>
+
+<body>
+<!-- content -->
+<th:block layout:fragment="content">
+    <!-- Main Content-->
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div id="board_detail">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</th:block>
+<!-- //content -->
+
+<!-- script -->
+<!--<th:block layout:fragment="custom_js">-->
+<!--    <script th:src="@{/assets/views/board/view.js}"></script>-->
+<!--</th:block>-->
+<!-- //script -->
+
+</body>
+</html>
