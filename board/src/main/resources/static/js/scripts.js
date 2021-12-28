@@ -36,7 +36,8 @@ window.addEventListener('DOMContentLoaded', () => {
         var url = window.location.href;
         console.log(url);
 
-        if (url.indexOf("details") > -1) {
+        // if (url.indexOf("details") > -1) {
+        if (!url.includes("details")) {
             console.log("details");
             targetId = url.split('/').pop();
             getboarddetail(targetId)
@@ -46,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
         } else {
             console.log("home");
         }
-        
+
     })
 })
 
