@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7ca1e67-34ca-4013-b4c9-b4e980f8b31c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/resources/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/static/js/scripts.js" afterDir="false" />
-    </list>
+    <list default="true" id="b7ca1e67-34ca-4013-b4c9-b4e980f8b31c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +95,7 @@
       <workItem from="1640679448484" duration="224000" />
       <workItem from="1640679697484" duration="368000" />
       <workItem from="1640680088339" duration="406000" />
-      <workItem from="1640680520234" duration="532000" />
+      <workItem from="1640680520234" duration="628000" />
     </task>
     <servers />
   </component>
