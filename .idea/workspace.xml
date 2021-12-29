@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b7ca1e67-34ca-4013-b4c9-b4e980f8b31c" name="Changes" comment="" />
+=======
+    <list default="true" id="b7ca1e67-34ca-4013-b4c9-b4e980f8b31c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/board.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/board.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/board.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/board.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> e2f56c7eb12a57d1d2465544083b3299c3d9b778
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +106,12 @@
       <workItem from="1640679448484" duration="224000" />
       <workItem from="1640679697484" duration="368000" />
       <workItem from="1640680088339" duration="406000" />
+<<<<<<< HEAD
       <workItem from="1640680520234" duration="628000" />
+=======
+      <workItem from="1640680520234" duration="532000" />
+      <workItem from="1640692654579" duration="516000" />
+>>>>>>> e2f56c7eb12a57d1d2465544083b3299c3d9b778
     </task>
     <servers />
   </component>
