@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/defaultLayout}"
+      th:with="metaTitle='게시판'">
+<head>
+
+</head>
+
+<body>
+<!-- content -->
+<th:block layout:fragment="content">
+    <!-- Main Content-->
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="col" id="board_create">
+<!--                    <form method="post" action="/api/boards">-->
+                    <form>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="title" class="form-label mt-4">제목</label>
+                                <input type="text" class="form-control" name="title" id="title" placeholder="제목을 입력하세요">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="content" class="form-label mt-4">내용</label>
+                                <textarea class="form-control" name="content" id="content" rows="3"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <!-- button-->
+                        <div class="d-flex justify-content-end my-4">
+                            <a class="btn btn-danger mx-1" href="/boards">취소</a>
+                            <input class="btn btn-primary mx-1" type="submit" id="submit" value="저장" onclick="writeBoard()">
+<!--                            <a class="btn btn-primary mx-1" type="submit">저장</a>-->
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>
+<!-- //content -->
+
+<!-- script -->
+<!--<th:block layout:fragment="custom_js">-->
+<!--    <script th:src="@{/assets/views/board/view.js}"></script>-->
+<!--</th:block>-->
+<!-- //script -->
+
+</body>
+</html>

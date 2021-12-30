@@ -64,3 +64,29 @@ function timerenewal(oldTime) {
 function dayrenewal(oldTime) {
     return oldTime.split("T")[0];
 }
+
+function writeBoard() {
+    let title = $('#title');
+    let content = $('#content');
+    let submit = $('#submit');
+
+
+    if (!title.val()){
+        submit.preventDefault();
+
+    }
+    if (!content.val()) {
+        content.focus();
+    }
+
+    $.ajax({
+        type: "POST",
+        url: `/api/boards`,
+        contentType: "application/json",
+        data: JSON.stringify({"title": title.val(), "content": content.val()}),
+        success: function (response) {
+            let targetId = response.id;
+            window.location.replace("/boards/details/"+targetId);
+        }
+    })
+}

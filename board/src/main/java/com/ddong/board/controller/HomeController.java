@@ -36,4 +36,9 @@ public class HomeController {
     public String boardDetail() {
         return "views/board/detail";
     }
+
+    @GetMapping("/boards/creates")
+    public String boardCreate() {
+        return "views/board/create";
+    }
 }

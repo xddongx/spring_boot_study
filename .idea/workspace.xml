@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08f03ce3-d8c9-40eb-b752-6b978fdec81c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/board.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/board.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/src/main/java/com/ddong/board/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/java/com/ddong/board/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board/src/main/resources/static/js/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/static/js/board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/resources/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/static/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/resources/templates/layout/defaultLayout.html" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/templates/layout/defaultLayout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/resources/templates/views/board/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/templates/views/board/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board/src/main/resources/templates/views/board/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/templates/views/board/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +51,27 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="22waoqIGtZqd1x8s9KRKFMbgxhD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -72,7 +79,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spartaSpring/week05" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
@@ -121,6 +128,7 @@
       <updated>1640736151339</updated>
       <workItem from="1640736153636" duration="1478000" />
       <workItem from="1640751288319" duration="6973000" />
+      <workItem from="1640822601872" duration="9520000" />
     </task>
     <servers />
   </component>
