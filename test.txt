@@ -1,2 +1,7 @@
 test
+<<<<<<< HEAD
 ddong2 : test
+=======
+
+ddong3 : test
+>>>>>>> ddong3
