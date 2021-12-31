@@ -41,4 +41,9 @@ public class HomeController {
     public String boardCreate() {
         return "views/board/create";
     }
+
+    @GetMapping("/boards/modified/{id}")
+    public String boardModified() {
+        return "views/board/create";
+    }
 }

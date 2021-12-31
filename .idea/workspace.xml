@@ -7,8 +7,6 @@
     <list default="true" id="08f03ce3-d8c9-40eb-b752-6b978fdec81c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/board/src/main/java/com/ddong/board/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/java/com/ddong/board/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/resources/static/js/board.js" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/static/js/board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/src/main/resources/templates/views/board/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/board/src/main/resources/templates/views/board/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +126,7 @@
       <updated>1640736151339</updated>
       <workItem from="1640736153636" duration="1478000" />
       <workItem from="1640751288319" duration="6973000" />
-      <workItem from="1640822601872" duration="9520000" />
+      <workItem from="1640822601872" duration="12103000" />
     </task>
     <servers />
   </component>
